@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* Ensures body fills the viewport height */
+}
+
+.section{
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 100px;
+    justify-content: center;
+    height: 100vh;
+        /* Make section fill the entire viewport height */
+}
+.section > h1{
+    background-color: darkseagreen;
+    padding: 10px;
+    text-align: center;
+}
+.title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.accordian{
+    background-color: cornflowerblue;
+   padding: 50px;
+}
+.content{
+    display: none;
+}
+.item.active .content {
+    
+    display: block;
+    padding-top: 20px;
+}
+/* Rotate the arrow when the item is active */
+.item .fa-arrow-down {
+    transition: transform 0.3s ease;
+    /* Smooth rotation */
+}
+
+.item.active .fa-arrow-down {
+    transform: rotate(180deg);
+    /* Rotate 180 degrees */
+}

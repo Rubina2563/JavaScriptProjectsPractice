@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.color-generator{
+    display: flex;
+    height: 100vh;
+    background-color: bisque;
+}
+.rgb-generator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color:rgb(91, 103, 124) ;
+}
+.hex-generator {
+    display: flex;
+    align-items: center;
+        justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: #dfeb0c;
+}
+.rgb-button, .hex-button, .rgb-clipboard{
+    height:50px;
+    padding:5px;
+}
+.hex-generator{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
