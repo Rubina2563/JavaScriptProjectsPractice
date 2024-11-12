@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+        height: 100%;
+}
+.modal-background{
+    width: 100%;
+        height: 100%;
+    position: fixed;
+ 
+    z-index:1;
+}
+.modal{
+    display:none;
+    padding: 50px;
+    background-color: rgb(200, 176, 181);
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    animation-name: modal_animate;
+    animation-duration: 1s;
+}
+
+@keyframes modal_animate{
+    from{
+top:-200px;
+opacity:0
+    }
+    to{
+top:50%;
+opacity: 1;
+    }
+}
+
+.button{
+    margin: 3px;
+    padding: 2px;
+}
+button{
+    background-color: yellow;
+    margin: 3px;
+    padding: 5px;
+border: 2px solid red;
+    border-radius: 5px;
+
+}
